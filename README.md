@@ -5,6 +5,7 @@ xCards is small JS library that enables you to use semantic html to display and 
 The library depends on the very useful web components [xtags] library by Mozilla Project.
 
 #Usage
+The different usages are displayed bellow. A live demo can be found in the **xcards.html** file.
 
 ##Specific card
 You can declare a specific card simply by specifying its rank and suit, or by declaring it a joker.
@@ -33,7 +34,7 @@ You can produce a random set of cards, simply by specifying how many cards you w
     <x-hand random="7"></x-hand>
 
 ##Shuffle
-Given a hand, you can shuffle (randomly reorder) the cards by invoking the shuffle() function of the x-hand element.
+Given a hand, you can shuffle (randomly reorder) the cards by invoking the **shuffle()** function of the x-hand element.
 
     <x-hand id="shuffle">
     	<x-card rank="5" suit="h"></x-card>
