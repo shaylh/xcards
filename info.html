@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>x-deck</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/x-tag-components.js"></script>
+<script src="js/deck.js"></script>
+<link rel="stylesheet" href="css/x-tag-components.css">
+<link rel="stylesheet" href="css/deck.css">
+<style type="text/css">
+
+table{
+
+background-color: #99FF99;
+border-radius: 10px;
+padding: 0 10px;
+}
+
+pre{
+	border-radius: 10px;
+	padding:5px;
+}
+
+td:FIRST-CHILD {
+	vertical-align: top;
+	padding-right: 20px;	
+}
+
+</style>
+</head>
+<body>
+<h2>specific cards</h2>
+<table>
+	<tr>
+		<td>syntax</td>
+		<td>
+			<pre style='color:#000000;background:#ffffff;'>
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"8"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"s"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"6"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"h"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"k"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"c"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> joker</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"true"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"a"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"d"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span>
+</pre></td>
+	</tr>
+	<tr>
+		<td>example</td>
+		<td><x-hand><x-card rank="8" suit="s"></x-card><x-card rank="6" suit="h"></x-card><x-card rank="k" suit="c"></x-card><x-card joker="true"></x-card><x-card rank="a" suit="d"></x-card></x-hand></td>
+	</tr>
+</table>
+<hr>
+<h2>Series</h2>
+<table>
+	<tr>
+		<td>syntax</td>
+		<td><pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-hand</span><span style='color:#274796; '> min</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"8"</span><span style='color:#274796; '> max</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"12"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"s"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span></pre></td>
+	</tr>
+	<tr>
+		<td>example</td>
+		<td><x-hand min="8" max="12" suit="s"></x-hand></td>
+	</tr>
+</table>
+<hr>
+<h2>More of the same</h2>
+<table>
+	<tr>
+		<td>syntax</td>
+		<td><pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-hand</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"5"</span><span style='color:#274796; '> suits</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"hdsc"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span></pre></td>
+	</tr>
+	<tr>
+		<td>example</td>
+		<td><x-hand rank="5" suits="hdsc"></x-hand></td>
+	</tr>
+</table>
+<hr>
+<h2>Random</h2>
+<table>
+	<tr>
+		<td>syntax</td>
+		<td><pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-hand</span><span style='color:#274796; '> random</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"7"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span></pre></td>
+	</tr>
+	<tr>
+		<td>example</td>
+		<td><x-hand random="7"></x-hand></td>
+	</tr>
+</table>
+<hr>
+<h2>Shuffle</h2>
+<table>
+	<tr>
+		<td>syntax</td>
+		<td><pre style='color:#000000;background:#ffffff;'>
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-hand</span><span style='color:#274796; '> </span><span style='color:#074726; '>id</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"shuffle"</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"5"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"h"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"6"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"s"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"5"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"d"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-card</span><span style='color:#274796; '> rank</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"7"</span><span style='color:#274796; '> suit</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"d"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-card</span><span style='color:#a65700; '>&gt;</span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>input</span><span style='color:#274796; '> </span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"button"</span><span style='color:#274796; '> </span><span style='color:#074726; '>value</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"shuffle"</span><span style='color:#274796; '> </span><span style='color:#074726; '>onclick</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"getElementById('shuffle').shuffle();"</span><span style='color:#a65700; '>/&gt;</span>
+</pre></td>
+	</tr>
+	<tr>
+		<td>example</td>
+		<td><x-hand id="shuffle"><x-card rank="5" suit="h"></x-card><x-card rank="6" suit="s"></x-card><x-card rank="5" suit="d"></x-card><x-card rank="7" suit="d"></x-card></x-hand><input type="button" value="shuffle" onclick="getElementById('shuffle').shuffle();"/></td>
+	</tr>
+</table>
+<hr>
+<h2>Face down</h2>
+<table>
+	<tr>
+		<td>syntax</td>
+		<td><pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>x-hand</span><span style='color:#274796; '> random</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"3"</span><span style='color:#274796; '> faceup</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"false"</span><span style='color:#a65700; '>&gt;</span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>x-hand</span><span style='color:#a65700; '>&gt;</span></pre></td>
+	</tr>
+	<tr>
+		<td>example</td>
+		<td><x-hand random="3" faceup="false"></x-hand></td>
+	</tr>
+</table>
+<hr>
+</body>
+</html>

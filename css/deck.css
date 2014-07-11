@@ -1,0 +1,32 @@
+x-hand{
+	background-color: #00CC33;
+	padding: 6px;
+	border-radius: 3px;
+}
+
+x-card{
+	background-color: white;
+	border: thin solid black;	
+	border-radius: 3px;
+	padding: 1px 2px;
+	margin: 0 1px;
+	cursor: hand;
+	cursor: pointer;
+	line-height: 200%;
+}
+
+x-card.red{
+	color: red;
+}
+
+span.red{
+    color: red;
+}
+
+x-card.bold{
+	font-weight: bold;
+}
+
+x-card.back{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQIW2P8z8Dwn5GBgRFKA3lQAZgImAYAwx8KAGPVMxgAAAAASUVORK5CYII=) white repeat;
+}
