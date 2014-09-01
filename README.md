@@ -5,7 +5,7 @@ xCards is small JS library that enables you to use semantic html to display and 
 The library depends on the very useful web components [xtags] library by Mozilla Project.
 
 #Usage
-The different usages are displayed bellow. A live demo can be found in the **xcards.html** file.
+The different usages are displayed bellow. A live demo can be found in the [**xcards.html**](https://rawgit.com/shaylh/xcards/master/xcards.html) file.
 
 ##Specific card
 You can declare a specific card simply by specifying its rank and suit, or by declaring it a joker.
